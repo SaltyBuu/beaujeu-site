@@ -1,0 +1,228 @@
+
+/*              Police importée             */
+
+
+@font-face {
+    font-family: "LOUD";
+    src: url('LOUD.TTF');
+}
+
+
+/*              Style général               */
+
+
+html {
+    height: 100%;
+}
+
+body {
+	font-family: verdana;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3cm;
+}
+
+h1 {
+    text-decoration: underline overline;
+    color: black;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 2cm;
+    font-family: "LOUD", arial, sans-serif; 
+}
+
+h2 {
+    font-family: "LOUD", arial, sans-serif;
+    text-align: center;
+}
+
+
+/*              Menu navigation             */
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    width: 100%; 
+}
+
+nav a {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	height: 50px;
+    align-items: center;
+    background-color: rgba(89,56,27,0.8);
+    justify-content: center;
+}
+
+nav a:hover {
+	background-color: black;
+}
+
+nav ul li ul {
+	display: none;
+    width: 25%;
+}
+
+nav ul li:hover ul {
+	display: block;
+    position: absolute;
+    top: 50px;
+}
+
+
+/*                 Page                 */
+
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+section img {
+    width: 105px;
+    height: 135px;
+}
+
+section ul div {
+    width: 105px;
+    height: 135px;
+    border: 1px solid black;
+}
+.etps {
+    border: 2px solid sandybrown;
+    align-items: center;
+    margin: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+.text {
+    
+}
+
+
+/*                Footer                  */
+    
+footer {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    display:inline-block;
+    height: 50px;
+    background-color: rgba(89,56,27,0.8);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12);
+    text-align: left;
+    padding: 20px;
+}
+
+footer .left {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+@media (max-width: 973px) {
+    footer {
+        padding-bottom: 3cm;
+        width: 100%;
+    }
+}        
+
+
+/*                  Footer gauche                    */
+        
+
+footer .links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+footer p.links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+footer .links .first:before {
+    content: none;
+}
+
+@media (min-width: 974px) {
+    footer .links .second:before {
+        margin-left: 5cm;
+        content: "";
+        margin-right: auto;
+    }
+
+    footer .links .third:before{
+        content: "";
+    }
+}
+
+
+/*                  Logos footer droit                  */
+
+
+footer .right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+    margin-right: 30px;
+}
+
+footer .right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #221000;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition:all 0.5s;
+   
+}
+
+footer .right a:hover{
+    transform:scale(1.1);
+}
+
+.links a:hover {
+    text-decoration:underline;
+}
+
