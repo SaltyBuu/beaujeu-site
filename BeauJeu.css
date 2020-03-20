@@ -1,0 +1,293 @@
+/*              Police importée             */
+
+
+@font-face {
+    font-family: "LOUD";
+    src: url('LOUD.TTF');
+}
+
+
+/*              Style général               */
+
+
+body {
+    background-image: url(Images/fond.jpg);
+	font-family: verdana;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+h1 {
+    text-decoration: underline overline;
+    color: black;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 2cm;
+    font-family: "LOUD", arial, sans-serif; 
+}
+
+div.title{
+	background-color: rgba(191,162,126,0.60);
+	margin-left: 13px;
+	margin-right: 13px;
+	padding-top:1px;
+	padding-bottom:1px;
+	margin-bottom: 20px;	
+}
+
+h2{
+    font-family: "LOUD", arial, sans-serif; 
+	text-align: center;
+	text-decoration: underline;	
+    margin-bottom: 20px;
+}
+
+
+/*              Menu de Navigation                  */
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    width: 100%; 
+}
+
+nav a {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	height: 50px;
+    align-items: center;
+    background-color: rgba(89,56,27,0.8);
+    justify-content: center;	
+}
+
+nav a:hover {
+	background-color: black;
+}
+
+nav ul li ul {
+	display: none;
+    width: 25%;
+}
+
+nav ul li:hover ul {
+	display: block;
+    position: absolute;
+    top: 50px;
+}
+
+
+/*              Organisation des blocs div              */
+
+
+
+div.content div {
+    display: inline-block;
+    width: 49.5%;
+    opacity: 0.9;
+    background-color: rgba(191,162,126,0.65);
+    text-align: center;
+    vertical-align: middle;
+}
+
+div#Histoire {
+    float: right;
+}
+
+iframe {
+    height: 70%;
+    width: 70%;
+    margin-top: 3%;
+    border: unset;
+}
+
+.img{
+	width: 70%;
+	height: 70%;   
+    margin-top: 3%;
+}	
+
+div.content, .text {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+div#Ajd {
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#Ajd img {
+    width: 45%;
+    margin-top: 3%;
+}
+
+div.text{
+	background-color: rgba(191,162,126,0.60);
+	padding: 5px;
+    margin-bottom: 1%;
+}
+
+.text p{
+	width: 98%;
+	text-align: left;
+}
+
+
+
+/*              Requêtes média              */
+
+
+@media (max-width: 1000px) {
+    .content div {
+        height: 700px;
+    }
+    
+    #Ajd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ajd img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .content div {
+        height: 590px;
+    }
+}
+
+
+/*                Footer                  */
+
+    
+footer {
+    width:100%;
+    display:inline-block;
+    height: 50px;
+    background-color: rgba(89,56,27,0.8);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12);
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+}
+
+footer .left {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 973px) {
+    footer {
+        padding-bottom: 3cm;
+        width: 100%;
+    }
+}        
+
+
+/*              Footer gauche               */
+    
+
+footer .links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+footer p.links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+footer .links .third:before{
+        content: "";
+}
+
+footer .links .first:before {
+    content: none;
+}
+
+@media (min-width: 974px) {
+    footer .links .second:before {
+        content: "";
+        margin-right: auto;
+    }  
+    
+    footer .links .second {
+        margin-left: 5cm;
+    }
+}
+
+
+/*                  Logos footer droit                  */
+
+
+footer .right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+    margin-right: 30px;
+}
+
+footer .right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #221000;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition:all 0.5s;
+}
+
+footer .right a:hover {
+    transform:scale(1.1);
+}
+
+.links a:hover {
+    text-decoration:underline;
+}
+
+
+
+
+
+         
